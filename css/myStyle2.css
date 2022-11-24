@@ -1,0 +1,518 @@
+body,
+html {
+  height: 100vh;
+}
+
+.navbar {
+  background: #FED593;
+}
+
+.navbar-toggler {
+  /*保留原本menu的btn樣式*/
+  border-color: rgba(0, 0, 0, .1);
+}
+
+.navbar-toggler-icon {
+  /*保留原本menu的btn樣式*/
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: 50%/100% 100% no-repeat;
+}
+
+.navbar a {
+  color: #807AB2;
+  font-family: 'Varela Round';
+  font-weight: bold;
+}
+
+.logIn {
+  background: #373453;
+  color: white !important;
+  padding: 5px;
+  border-radius: 20px;
+  display: inline-block;
+  /*RWD時的樣式*/
+}
+
+.logIn:hover {
+  background: #807AB2;
+  text-decoration: none;
+}
+
+/*----------header結束----------*/
+
+.content {
+  background: #232138;
+  height: 85%;
+}
+
+.left {
+  position: relative;
+  background: #373453;
+  color: white;
+  border-radius: 0 10% 0 0;
+}
+
+.leftTitle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: 700;
+}
+
+.title {
+  font-size: xx-large;
+}
+
+.cloud,
+.star {
+  position: absolute;
+}
+
+.cloud {
+  left: 0;
+  bottom: 0;
+}
+
+.star {
+  width: 10%;
+  left: 15px;
+  bottom: 15px;
+}
+
+/*----------firstLeftContent結束----------*/
+
+.right {
+  position: relative;
+}
+
+.fourth,
+.middleStar,
+.purpleRainbow,
+.the,
+.f2e,
+.leftCloud,
+.rightCloud,
+.pinkBlock {
+  position: absolute;
+}
+
+.fourth {
+  top: 50%;
+  right: 15%;
+  color: #E95D60;
+  margin: 0;
+  font-size: xx-large;
+  font-weight: 900;
+  font-family: 'Varela Round';
+  text-shadow: 1px 1px #FFF3E0, -1px -1px #FFF3E0, 1px -1px #FFF3E0, -1px 1px #FFF3E0;
+  /*空心字*/
+}
+
+.middleStar {
+  width: 6%;
+  top: 35%;
+  left: -3%;
+  rotate: 60deg;
+}
+
+.purpleRainbow {
+  width: 75%;
+}
+
+.the {
+  width: 25%;
+  top: 40px;
+  left: 25px;
+}
+
+.leftCloud {
+  width: 30%;
+  left: 0;
+  bottom: 25%;
+}
+
+.rightCloud {
+  width: 30%;
+  top: 25%;
+  right: 0;
+}
+
+.pinkBlock {
+  width: 55%;
+  right: 5%;
+  bottom: 0;
+}
+
+/*----------firstRightContent結束----------*/
+
+.footer {
+  background: #FED593;
+  overflow: hidden;
+}
+
+.loop {
+  list-style: none;
+  color: #807AB2;
+  white-space: nowrap;
+  text-align: center;
+  font-size: x-large;
+  margin: 0;
+  padding: 0;
+  line-height: 50px;
+}
+
+/*----------firstPage結束----------*/
+
+.secondPage {
+  background: #FFF3E0;
+}
+
+.secondLeft,
+.secondRight {
+  position: relative;
+}
+
+.rocket {
+  position: absolute;
+}
+
+.rocket {
+  width: 60%;
+  top: 20%;
+  left: 15%;
+}
+
+.sOne p,
+.sTwo p,
+.sThree p {
+  display: inline-block;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.secondCloud {
+  transform: scaleX(-1);
+  /*水平翻轉*/
+}
+
+/*----------secondPage結束----------*/
+
+.thirdPage {
+  background: #232138;
+  color: white;
+  text-align: center;
+}
+
+.article,
+.thirdLeftCloud,
+.thirdRightCloud,
+.thirdStar,
+.thirdStar2 {
+  position: absolute;
+}
+
+.article {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+.thirdLeftCloud {
+  transform: scaleX(-1);
+  width: 25%;
+  left: 0;
+  bottom: 0;
+}
+
+.thirdRightCloud {
+  width: 25%;
+  right: 0;
+  bottom: 0;
+}
+
+.thirdStar {
+  width: 2%;
+  top: 25%;
+  left: 30%;
+}
+
+.thirdStar2 {
+  width: 2%;
+  top: 45%;
+  right: 30%;
+}
+
+.clear {
+  margin: 0;
+}
+
+.textRed {
+  color: #E95D60;
+}
+
+/*----------thirdPage結束----------*/
+
+.fourContent {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.week {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #373453;
+  font-weight: bold;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.week-left {
+  left: 0;
+}
+
+.week-right {
+  right: 0;
+}
+
+.week-left-1 {
+  background: #FED593;
+}
+
+.week-right-1 {
+  background: #807AB2;
+}
+
+.week-left-2 {
+  background: #CAC7DE;
+}
+
+.week-right-2 {
+  background: #FED1D2;
+}
+
+.week-left-3 {
+  background: #2F9484;
+}
+
+.week-right-3 {
+  background: #E95D60;
+}
+
+.woneArticle h1,
+.wtwoArticle h1,
+.wthreeArticle h1 {
+  margin-bottom: 30px;
+}
+
+.woneArticle a,
+.wtwoArticle a,
+.wthreeArticle a {
+  text-decoration: none;
+  display: block;
+  width: 130px;
+  height: 50px;
+  margin: auto;
+  line-height: 50px;
+  background: white;
+  border-radius: 30px;
+  color: #373453;
+  border: 3px solid #373453;
+}
+
+.woneArticle a:hover,
+.wtwoArticle a:hover,
+.wthreeArticle a:hover {
+  background: #373453;
+  color: white;
+}
+
+.weekCloud,
+.weekStar {
+  position: absolute;
+}
+
+.weekCloud {
+  left: 0;
+  bottom: 0;
+}
+
+.weekStar {
+  width: 6%;
+}
+
+/*----------fourthPage結束----------*/
+
+.fifthPage {
+  background: #373453;
+  position: relative;
+}
+
+.track {
+  width: 5px;
+}
+
+.straightRocket,
+.fifLeftCloud,
+.fifRightCloud,
+.fif {
+  position: absolute;
+}
+
+.straightRocket {
+  width: 8%;
+}
+
+.fifLeftCloud {
+  width: 20%;
+  left: 0;
+  bottom: 0;
+}
+
+.fifRightCloud {
+  width: 20%;
+  right: 0;
+  bottom: 0;
+}
+
+.fif span {
+  color: white;
+}
+
+.fif i {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.fifScroll1 {
+  left: 55%;
+  top: 40%;
+}
+
+.fifScroll2 {
+  right: 55%;
+  top: 50%;
+}
+
+.fifScroll3 {
+  left: 55%;
+  top: 60%;
+}
+
+.fifScroll4 {
+  right: 55%;
+  top: 70%;
+}
+
+.trackStar1 {
+  color: #FED593;
+}
+
+.trackStar2 {
+  color: #2F9484;
+}
+
+.trackStar3 {
+  color: #807AB2;
+}
+
+.trackStar4 {
+  color: #FA9EA7;
+}
+
+/*----------fifthPage結束----------*/
+
+.sixthPage {
+  background: #FED593;
+}
+
+.sixthPage h3 {
+  font-weight: bold;
+}
+
+.purpleThunder,
+.redThunder {
+  width: 3%;
+}
+
+.judge,
+.prize {
+  background: white;
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 2px 2px 4px 4px #373453;
+  width: inherit;
+}
+
+.judge p,
+.prize p,
+.prize h5 {
+  margin: 0;
+}
+
+.judge,
+.prize,
+.judge h2,
+.prize h2,
+.prize h5,
+.prize h6 {
+  font-weight: bold;
+}
+
+.prize p {
+  padding: 0 0 0 105px;
+}
+
+.prize span {
+  padding: 0 15px 0 10px;
+}
+
+.prizeEnd {
+  text-align: end;
+}
+
+/*----------sixthPage結束----------*/
+
+.seventhPage {
+  background: #373453;
+  position: relative;
+}
+
+.seventhPage h2 {
+  margin: 0 auto;
+  color: #E95D60;
+  text-align: center;
+  padding: 50px 0;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.lastCloud{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+

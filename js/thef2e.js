@@ -5,19 +5,21 @@ $(function(){
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 //firstPage 
+gsap.from('.leftCloud', {x:200, duration: 3})
 gsap.from('.rightCloud', {x:-200, duration: 3})
-gsap.from('.leftCloud', {x:200, duration: 3})//星星閃爍
-gsap.from('.rightTitle', {y:50,ease:"bounce", duration: 2})
+gsap.from('.fourth', {y:100,ease:"bounce", duration: 2})
 gsap.fromTo('.thirdStar', {autoAlpha: 0.2}, {autoAlpha: 1, duration: 2, repeat: -1})
 gsap.fromTo('.thirdStar2', {autoAlpha: 0.2}, {autoAlpha: 1, duration: 2, repeat: -1})
 
-gsap.to(".loop", {    //跑馬燈
+//文字輪播
+gsap.to(".loop", {   
 xPercent: "-50", 
 ease: "none",
 duration: 10,
 repeat: -1,
 });
 
+//滾動控制頁
 const srollTL = gsap.timeline({
 scrollTrigger: {
     trigger: ".fourContent", 
@@ -90,7 +92,7 @@ function animated(element) {
         { x: x, y: 0, opacity: 0, visibility: "hidden" },
         {
           duration: 1,
-          delay: 1.5,
+          delay: 1,
           x: 0,
           y: 0,
           visibility: "visible",
